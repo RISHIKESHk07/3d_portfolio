@@ -1093,14 +1093,10 @@ from fastapi import FastAPI
 from pydantic import BaseModel
 from fastapi.middleware.cors import CORSMiddleware
 from keras.preprocessing.sequence import pad_sequences
-import nest_asyncio
-from pyngrok import ngrok
 import uvicorn
 import tensorflow as tf
 
 
-# 🛠 Patch asyncio for Colab
-nest_asyncio.apply()
 
 # 🚀 Create FastAPI app
 app = FastAPI()
